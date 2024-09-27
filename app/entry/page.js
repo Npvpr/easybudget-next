@@ -39,6 +39,10 @@ export default function EntryPage() {
             >
               <p>{index + 1}.</p>
               <p>{item.type}</p>
+              <p>
+                {item.account.name.charAt(0).toUpperCase() +
+                  item.account.name.slice(1)}
+              </p>
               <p>{item.category.name}</p>
               <p>{item.cost}</p>
               <p>{item.dateTime}</p>
